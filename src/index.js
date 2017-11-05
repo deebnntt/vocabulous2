@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import LatestMovieReviewsContainer from './components/LatestMovieReviewsContainer';
-import SearchableMovieReviewsContainer from './components/SearchableMovieReviewsContainer';
+import App from './App';
+import './index.css';
 
 ReactDOM.render(
-  <div className="app">
-    <SearchableMovieReviewsContainer />
-    <LatestMovieReviewsContainer />
-  </div>,
-  document.getElementById('root')
+	<div>
+		<div className="header-div">
+			<h1>Vocabulous.</h1>
+		</div>
+		<App />
+	</div>,
+	document.getElementById('global')
 );

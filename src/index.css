@@ -1,0 +1,20 @@
+body {
+	background-color: pink;
+}
+
+.header-div {
+	background-color: pink;
+	margin: 0px;
+	padding: 10px;
+	height: 60px;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+h1 {
+	padding: 0px;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 80px;
+	text-align: center;
+}

@@ -8,11 +8,8 @@ export default class Word extends React.Component {
 		this.state = {
 			word: '',
 			definition1: '',
-			definition2: '',
 			partOfSpeech1: '',
-			partOfSpeech2: '',
 			example1: '',
-			example2: '',
 			sentence: '',
 			used: false
 		};
@@ -23,11 +20,8 @@ export default class Word extends React.Component {
 			this.setState({
 				word: json.word,
 				definition1: json.definitions[0].text,
-				definition2: json.definitions[1].text,
 				partOfSpeech1: json.definitions[0].partOfSpeech,
-				partOfSpeech2: json.definitions[1].partOfSpeech,
-				example1: json.examples[0].text,
-				example2: json.examples[1].text
+				example1: json.examples[0].text
 			})
 		);
 	}
@@ -60,15 +54,10 @@ export default class Word extends React.Component {
 						{this.state.definition1} ({this.state.partOfSpeech1})
 					</li>
 					<br />
-					<li>
-						{this.state.definition2} ({this.state.partOfSpeech1})
-					</li>
 				</ol>
 				<h3>Example uses:</h3>
 				<ol>
 					<li>{this.state.example1}</li>
-					<br />
-					<li>{this.state.example2}</li>
 				</ol>
 			</div>
 		);
